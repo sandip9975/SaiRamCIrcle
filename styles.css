@@ -288,7 +288,7 @@ body {
 .mandala-pattern::after {
     width: 100px;
     height: 100px;
-}
+}   
 
 .scroll-indicator {
     position: absolute;
