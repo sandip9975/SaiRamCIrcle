@@ -72,34 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Contact Form Handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const message = formData.get('message');
-
-            // Basic validation
-            if (!name || !email || !message) {
-                showNotification('Please fill in all required fields.', 'error');
-                return;
-            }
-
-            if (!isValidEmail(email)) {
-                showNotification('Please enter a valid email address.', 'error');
-                return;
-            }
-
-            // Simulate form submission
-            showNotification('Thank you for your message! We will get back to you soon.', 'success');
-            this.reset();
-        });
-    }
+   
 
     // Donation functionality
     const donationBtns = document.querySelectorAll('.donation-btn');
