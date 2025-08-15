@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>   
+    #s1{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(0, 234, 255);
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    #s1:hover, #s2:hover {
+      background-color: rgb(5, 119, 167);
+    }
+  </style>
 </head>
 <body>
     <!-- Header -->
@@ -26,6 +42,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#events" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#events" class="nav-link">Preview Events</a>
                     </li>
                     <li class="nav-item">
                         <a href="#gallery" class="nav-link">Gallery</a>
@@ -58,7 +77,7 @@
             <div class="hero-text">
                 <h1 class="hero-title">
                     <span class="sanskrit">ॐ गं गणपतये नमः</span>
-                    <span class="main-title">Sai Ram Frind Circle</span>
+                    <span class="main-title">Sai Ram Friend Circle</span>
                 </h1>
                 <p class="hero-subtitle">Embracing spirituality, fostering community, celebrating traditions</p>
                 <div class="hero-buttons">
@@ -107,6 +126,48 @@
                         <p>Rooted in ancient wisdom and modern compassion, we believe in service, devotion, and the power of community. Our values guide us in creating meaningful spiritual experiences for all.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section Gallery -->
+    <section id="events" class="events">
+       <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preview & Upcoming Events Gallery</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Moments of ganesh festival celebration</p>
+            </div>            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="event.jpeg"Traditional Decorations>
+                    <div class="gallery-overlay">
+                         <h3>
+                             Ganesh Events 
+                        </h3>                    
+                        <a href="event.html" id="s1">check </a>
+                    </div>
+
+                </div>
+                <div class="gallery-item" >                    
+                    <img src="visarjan.jpg" Lord Ganesh Statue>
+                    <div class="gallery-overlay">                        
+                        <h3>
+                            स्थापना दिवस आणि विसर्जन 
+                        </h3>                    
+                        <a href="miravnuk.html" id="s1">check </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                   <img src="miravnuk.jpg" Festival Celebration>
+                    <div class="gallery-overlay">
+                        <h3>
+                            2023 Gnaesh Events
+                        </h3>
+                        <a href="event.html" id="s1">check </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -165,7 +226,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
@@ -203,7 +264,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -248,7 +309,8 @@
                             <div class="form-group">
                             <input type="text" name ="name" required placeholder="your Massage" >                        
                             <input type="email" name ="email" required placeholder="Your Email">                                                                                                                       
-                            <textarea name="message" required  placeholder="Your Message"></textarea>
+                            <textarea name="message" required  placeholder="Your Message"></textarea>                        
+                            <input type="hidden" name="_template" value="table">
                              <button type="submit" class="btn btn-primary">Submit</button>  
                             </div>
                       </form>
